@@ -29,7 +29,7 @@
                 $num6 = $_POST['div_yld'];
                 
                 #$data = array($num1,$num2);
-                $result = exec("python /home/vivek/Python/optionscalculator/basic.py $num1 $num2 $num3 $num4 $num5 $num6");
+                $result = exec("python /vivek252007/Finance/Options_Price_&_Greeks_Calculator_using_Python_&_PHP/options_greek_functions.py $num1 $num2 $num3 $num4 $num5 $num6");
                 $total = json_decode($result, true);
                 echo "Call Price : ".$total['call_price'];
                 echo "<br>Put Price : " .$total['put_price'];
